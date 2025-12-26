@@ -2,6 +2,10 @@
 
 This project demonstrates how to build a **reusable, customizable star rating component** in React by applying the concept of **lifting state up**.
 
+![Video_2025-12-26_195832-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/d0dd8463-d809-48bc-adcb-ac6882ba0bf2)
+
+
+
 The component can be reused across different projects and customized with props such as:
 - number of stars
 - color
