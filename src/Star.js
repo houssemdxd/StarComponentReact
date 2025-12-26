@@ -47,14 +47,13 @@ return (
     fontSize: "17px",
   };
 
- export default function StarRating({maxlength})
+ export default function StarRating({maxlength,color,onRating,rate})
 {
-const [rating , setRating] = useState(0)
 const [tempRating , setTempRating] = useState(0);
 
 function onRate(val)
 {
-setRating(val)
+onRating(val)
 }
 
 
@@ -71,14 +70,14 @@ return (
 onRate={()=>onRate(i+1)} 
 onHoverIn={()=>setTempRating(i+1)}  
 onHoverOut={()=>{setTempRating(0)}}
-full={tempRating ? tempRating >= i + 1 : rating >= i + 1}
-color="yellow"
+full={tempRating ? tempRating >= i + 1 : rate >= i + 1}
+color={color}
 />
   </div>
 ))
 
 }
-<div><p style={textStyle}>{tempRating ? tempRating:rating}</p></div>
+<div><p style={textStyle}>{tempRating ? tempRating:rate}</p></div>
 </div>
 )
 
