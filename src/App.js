@@ -15,7 +15,10 @@ function App() {
   
   
   return (
-    <StarRating maxlength={10} onRating={onRating} rate = {rating} color="red"></StarRating>
+    <StarRating maxlength={5} 
+    onRating={onRating} rate = {rating} 
+    color="yellow"
+    />
   );
 }
 
